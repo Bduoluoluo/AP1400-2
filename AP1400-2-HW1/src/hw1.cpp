@@ -1,5 +1,15 @@
 #include "hw1.h"
 
+int algebra::getRowNum (const Matrix& matrix) {
+    return matrix.size();
+}
+
+int algebra::getColNum (const Matrix& matrix) {
+    if (matrix.empty())
+        return 0;
+    return matrix[0].size();
+}
+
 Matrix algebra::zeros (size_t n, size_t m) {
     Matrix matrix(n);
     for (int i = 0; i < n; i ++)
@@ -15,9 +25,8 @@ Matrix algebra::ones (size_t n, size_t m) {
 }
 
 Matrix algebra::random (size_t n, size_t m, double min, double max) {
-    if (min > max) {
+    if (min > max)
         throw std::logic_error("Min must be less than or equal to max!");
-    }
 
     Matrix matrix(n);
     std::random_device rd;
@@ -38,4 +47,25 @@ void algebra::show (const Matrix& matrix) {
             cout << std::fixed << std::setw(10) << std::setprecision(3) << elem;
         cout << endl;
     }
+}
+
+Matrix algebra::multiply (const Matrix& matrix, double c) {
+    Matrix scalar_matrix = matrix;
+    for (auto& row : scalar_matrix)
+        for (auto& elem : row)
+            elem *= c;
+    return scalar_matrix;
+}
+
+Matrix algebra::multiply (const Matrix& matrix1, const Matrix& matrix2) {
+    if (algebra::getColNum(matrix1) != algebra::getRowNum(matrix2))
+        throw std::logic_error("The number of columns in matrix1 must equal to the number of rows in matrix2!");
+
+    int row = getRowNum(matrix1), col = getColNum(matrix2), tmp = getColNum(matrix1);
+    Matrix mul_matrix = algebra::zeros(row, col);
+    for (int i = 0; i < row; i ++)
+        for (int k = 0; k < tmp; k ++)
+            for (int j = 0; j < col; j ++)
+                mul_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
+    return mul_matrix;
 }
