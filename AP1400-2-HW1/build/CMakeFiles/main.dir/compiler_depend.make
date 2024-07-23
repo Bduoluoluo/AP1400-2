@@ -183,7 +183,47 @@ CMakeFiles/main.dir/src/hw1.cpp.o: ../src/hw1.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/limits \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc
 
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
@@ -504,7 +544,25 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/local/include/gtest/gtest-typed-test.h \
   /usr/local/include/gtest/gtest_pred_impl.h \
   /usr/local/include/gtest/gtest_prod.h \
-  ../include/hw1.h
+  ../include/hw1.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h
 
 CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   /usr/include/stdc-predef.h \
@@ -865,7 +923,13 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   /usr/local/include/gmock/internal/custom/gmock-generated-actions.h \
   /usr/local/include/gmock/gmock-more-matchers.h \
   /usr/local/include/gmock/gmock-nice-strict.h \
-  ../include/hw1.h
+  ../include/hw1.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h
 
 
 /usr/local/include/gmock/gmock-more-matchers.h:
@@ -873,18 +937,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/local/include/gmock/gmock-more-actions.h:
 
 /usr/local/include/gmock/internal/custom/gmock-matchers.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/local/include/gmock/gmock-matchers.h:
 
@@ -974,10 +1026,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/include/c++/11/atomic:
 
 /usr/local/include/gtest/gtest-matchers.h:
@@ -990,6 +1038,38 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/regex.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/local/include/gtest/internal/gtest-internal.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+../src/unit_test.cpp:
+
+/usr/local/include/gtest/internal/gtest-port-arch.h:
+
+/usr/local/include/gtest/internal/custom/gtest-port.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
 /usr/local/include/gmock/gmock.h:
 
 /usr/include/c++/11/bits/locale_classes.h:
@@ -999,6 +1079,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/c++/11/numeric:
 
 /usr/include/signal.h:
 
@@ -1018,6 +1100,12 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
+
 /usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
@@ -1027,6 +1115,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -1057,10 +1147,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/local/include/gtest/gtest-assertion-result.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/11/cmath:
-
-/usr/include/c++/11/bits/allocator.h:
 
 /usr/include/c++/11/bits/char_traits.h:
 
@@ -1096,10 +1182,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/cwchar:
 
-/usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
@@ -1120,10 +1202,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/11/ratio:
-
-/usr/include/c++/11/condition_variable:
-
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/11/string:
@@ -1140,20 +1218,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 ../include/hw1.h:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/local/include/gtest/gtest-test-part.h:
-
-/usr/include/c++/11/iostream:
-
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
 /usr/include/c++/11/backward/binders.h:
@@ -1169,6 +1233,12 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
 
 /usr/local/include/gtest/gtest-message.h:
 
@@ -1190,8 +1260,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/debug/assertions.h:
 
-/usr/include/linux/close_range.h:
-
 /usr/include/c++/11/chrono:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -1210,10 +1278,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/align.h:
 
-/usr/local/include/gtest/internal/gtest-internal.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/c++/11/clocale:
@@ -1231,12 +1295,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/c++/11/new:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -1282,15 +1340,9 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -1303,6 +1355,10 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/include/c++/11/cmath:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -1321,6 +1377,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/local/include/gmock/gmock-spec-builders.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/backward/auto_ptr.h:
 
@@ -1368,8 +1426,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
 /usr/include/c++/11/ostream:
 
 /usr/include/c++/11/bits/unique_ptr.h:
@@ -1416,6 +1472,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/c++/11/bits/random.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/alloca.h:
@@ -1452,11 +1510,19 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/local/include/gtest/gtest-test-part.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/local/include/gmock/gmock-nice-strict.h:
 
@@ -1478,63 +1544,67 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/locale_facets.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/c++/11/cwctype:
+
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/c++/11/random:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/local/include/gtest/gtest-typed-test.h:
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-../src/main.cpp:
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/c++/11/bits/random.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/limits:
 
-/usr/include/c++/11/memory:
+/usr/include/linux/posix_types.h:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/limits.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/local/include/gtest/internal/gtest-port.h:
-
-/usr/include/c++/11/array:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/c++/11/stdlib.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/string.h:
+/usr/local/include/gtest/gtest.h:
 
 /usr/local/include/gtest/gtest-printers.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
@@ -1545,6 +1615,40 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
+
+/usr/include/limits.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/local/include/gtest/internal/gtest-port.h:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/local/include/gtest/gtest-typed-test.h:
+
+../src/main.cpp:
+
+/usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/stdlib.h:
+
+/usr/include/c++/11/bits/streambuf.tcc:
+
+/usr/include/string.h:
 
 /usr/include/unistd.h:
 
@@ -1563,31 +1667,3 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/asm-generic/bitsperlong.h:
-
-/usr/local/include/gtest/gtest.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/local/include/gtest/internal/custom/gtest-port.h:
-
-../src/unit_test.cpp:
-
-/usr/local/include/gtest/internal/gtest-port-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/regex.h:
