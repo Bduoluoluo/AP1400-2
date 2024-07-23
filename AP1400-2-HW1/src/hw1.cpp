@@ -50,11 +50,11 @@ void algebra::show (const Matrix& matrix) {
 }
 
 Matrix algebra::multiply (const Matrix& matrix, double c) {
-    Matrix scalar_matrix = matrix;
-    for (auto& row : scalar_matrix)
+    Matrix mul_matrix = matrix;
+    for (auto& row : mul_matrix)
         for (auto& elem : row)
             elem *= c;
-    return scalar_matrix;
+    return mul_matrix;
 }
 
 Matrix algebra::multiply (const Matrix& matrix1, const Matrix& matrix2) {
@@ -68,4 +68,23 @@ Matrix algebra::multiply (const Matrix& matrix1, const Matrix& matrix2) {
             for (int j = 0; j < col; j ++)
                 mul_matrix[i][j] += matrix1[i][k] * matrix2[k][j];
     return mul_matrix;
+}
+
+Matrix algebra::sum (const Matrix& matrix, double c) {
+    Matrix sum_matrix = matrix;
+    for (auto& row : sum_matrix)
+        for (auto& elem : row)
+            elem += c;
+    return sum_matrix;
+}
+
+Matrix algebra::sum (const Matrix& matrix1, const Matrix& matrix2) {
+    if (algebra::getRowNum(matrix1) != algebra::getRowNum(matrix2) || algebra::getColNum(matrix1) != algebra::getColNum(matrix2))
+        throw std::logic_error("The shapes of matrix1 and matrix2 must be the same!");
+    
+    Matrix sum_matrix = matrix1;
+    for (int i = 0; i < algebra::getRowNum(sum_matrix); i ++)
+        for (int j = 0; j < algebra::getColNum(sum_matrix); j ++)
+            sum_matrix[i][j] += matrix2[i][j];
+    return sum_matrix;
 }
