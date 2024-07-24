@@ -186,7 +186,7 @@ Matrix algebra::concatenate (const Matrix& matrix1, const Matrix& matrix2, int a
 Matrix algebra::ero_swap (const Matrix& matrix, size_t r1, size_t r2) {
     int row = algebra::getRowNum(matrix);
     if (r1 >= row || r2 >= row || r1 < 0 || r2 < 0)
-        std::logic_error("The r1 and r2 must be within the shape of the matrix!");
+        throw std::logic_error("The r1 and r2 must be within the shape of the matrix!");
     
     if (r1 == r2) return matrix;
     Matrix swap_matrix = matrix;
@@ -196,7 +196,7 @@ Matrix algebra::ero_swap (const Matrix& matrix, size_t r1, size_t r2) {
 
 Matrix algebra::ero_multiply (const Matrix& matrix, size_t r, double c) {
     if (r >= algebra::getRowNum(matrix) || r < 0)
-        std::logic_error("The r must be within the shape of the matrix!");
+        throw std::logic_error("The r must be within the shape of the matrix!");
     
     Matrix mul_matrix = matrix;
     for (auto& elem : mul_matrix[r])
@@ -207,10 +207,32 @@ Matrix algebra::ero_multiply (const Matrix& matrix, size_t r, double c) {
 Matrix algebra::ero_sum (const Matrix& matrix, size_t r1, double c, size_t r2) {
     int row = algebra::getRowNum(matrix);
     if (r1 >= row || r2 >= row || r1 < 0 || r2 < 0)
-        std::logic_error("The r1 and r2 must be within the shape of the matrix!");
+        throw std::logic_error("The r1 and r2 must be within the shape of the matrix!");
 
     Matrix sum_matrix = matrix;
     for (int i = 0; i < algebra::getColNum(matrix); i ++)
-        sum_matrix[r2][i] += matrix[r1][i];
+        sum_matrix[r2][i] += matrix[r1][i] * c;
     return sum_matrix;
+}
+
+Matrix algebra::upper_triangular (const Matrix& matrix) {
+    if (algebra::getRowNum(matrix) != algebra::getColNum(matrix))
+        throw std::logic_error("The number of rows must equal to the number of columns!");
+    
+    Matrix tri_matrix = matrix;
+    int n = algebra::getRowNum(matrix);
+    for (int i = 0; i < n; i ++) {
+        if (fabs(tri_matrix[i][i]) < eps) {
+            for (int j = i + 1; j < n; j ++)
+                if (fabs(tri_matrix[j][i]) >= eps) {
+                    tri_matrix = algebra::ero_swap(tri_matrix, i, j);
+                    break;
+                }
+            if (fabs(tri_matrix[i][i]) < eps) continue;
+        }
+
+        for (int j = i + 1; j < n; j ++)
+            tri_matrix = algebra::ero_sum(tri_matrix, i, -tri_matrix[j][i] / tri_matrix[i][i], j);
+    }
+    return tri_matrix;
 }
