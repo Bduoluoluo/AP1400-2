@@ -115,3 +115,43 @@ Matrix algebra::minor (const Matrix& matrix, size_t n, size_t m) {
     }
     return minor_matrix;
 }
+
+double algebra::determinant (const Matrix& matrix) {
+    if (algebra::getRowNum(matrix) != algebra::getColNum(matrix))
+        throw std::logic_error("The number of rows must equal to the number of columns!");
+
+    if (matrix.empty())
+        return 1;
+
+    int row = algebra::getRowNum(matrix);
+    double det = 0, coe = 1;
+    for (int i = 0; i < row; i ++) {
+        det += matrix[i][0] * coe * algebra::determinant(algebra::minor(matrix, i, 0));
+        coe *= -1;
+    }
+    return det;
+}
+
+Matrix algebra::inverse (const Matrix& matrix) {
+    if (algebra::getRowNum(matrix) != algebra::getColNum(matrix))
+        throw std::logic_error("The number of rows must equal to the number of columns!");
+    
+    if (matrix.empty())
+        return matrix;
+
+    double det = algebra::determinant(matrix);
+    if (fabs(det) < eps)
+        throw std::logic_error("This matrix can't be inversed!");
+
+    int n = algebra::getRowNum(matrix);
+    Matrix adj_matrix = algebra::zeros(n, n);
+    for (int i = 0; i < n; i ++) {
+        double coe = (i & 1) ? -1 : 1;
+        for (int j = 0; j < n; j ++) {
+            adj_matrix[j][i] = coe * algebra::determinant(algebra::minor(matrix, i, j));
+            coe *= -1;
+        }        
+    }
+
+    return algebra::multiply(adj_matrix, 1 / det);
+}

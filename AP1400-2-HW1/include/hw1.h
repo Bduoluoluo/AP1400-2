@@ -11,6 +11,8 @@ using std::cout;
 using std::endl;
 using Matrix = vector<vector<double>>;
 
+const double eps = 1e-9;
+
 namespace algebra {
     size_t getRowNum (const Matrix& matrix);
     size_t getColNum (const Matrix& matrix);
@@ -24,6 +26,8 @@ namespace algebra {
     Matrix sum (const Matrix& matrix1, const Matrix& matrix2);
     Matrix transpose (const Matrix& matrix);
     Matrix minor (const Matrix& matrix, size_t n, size_t m);
+    double determinant (const Matrix& matrix);
+    Matrix inverse (const Matrix& matrix);
 }
 
 #endif //AP_HW1_H

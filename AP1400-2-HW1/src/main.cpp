@@ -5,10 +5,9 @@
 int main(int argc, char **argv) {
     if (false) { // make false to run unit-tests
         // debug section
-        Matrix matrix{{7, 2.5, 3.1}, {4.2, 5, 10.4}, {70.7, 8, 0}};
-        Matrix minor = algebra::minor(matrix, 1, 1);
-        algebra::show(matrix);
-        algebra::show(minor);
+        Matrix matrix{{1, 0}, {0, 1}};
+        Matrix inv = algebra::inverse(matrix);
+        algebra::show(inv);
     } else {
         ::testing::InitGoogleTest(&argc, argv);
         std::cout << "RUNNING TESTS ..." << std::endl;
