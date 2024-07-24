@@ -243,7 +243,7 @@ TEST(HW1Test, INVERSE2) {
     EXPECT_NEAR(inverse[3][1], 2.80, 0.03);
     EXPECT_NEAR(inverse[0][3], 0, 0.03);
 }
-/*
+
 TEST(HW1Test, CONCATENATE1) {
     // Caution: matrices with wrong dimensions cannot be concatenated
     EXPECT_THROW(algebra::concatenate(Matrix{{1, 2}}, Matrix{{1, 2, 3}, {4, 5, 6}}, 0), std::logic_error);
@@ -325,7 +325,7 @@ TEST(HW1Test, ERO_SUM) {
     for (size_t i{}; i < ero[3].size(); i++)
         EXPECT_NEAR(ero[3][i], matrix[0][i]*2+matrix[3][i], 0.03);
 }
-
+/*
 TEST(HW1Test, UPPER_TRIANGULAR1) {
     // Caution: empty matrix
     EXPECT_TRUE(algebra::upper_triangular(Matrix{}).empty());

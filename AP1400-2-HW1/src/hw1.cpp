@@ -152,6 +152,65 @@ Matrix algebra::inverse (const Matrix& matrix) {
             coe *= -1;
         }        
     }
-
     return algebra::multiply(adj_matrix, 1 / det);
+}
+
+Matrix algebra::concatenate (const Matrix& matrix1, const Matrix& matrix2, int axis = 0) {
+    if (axis == 0) {
+        if (algebra::getColNum(matrix1) != algebra::getColNum(matrix2))
+            throw std::logic_error("The matrix1 and matrix2 can't be concatenated alone the axis 0!");
+        
+        int row1 = getRowNum(matrix1), row2 = getRowNum(matrix2), col = getColNum(matrix1);
+        Matrix con_matrix = algebra::zeros(row1 + row2, col);
+        for (int i = 0; i < row1 + row2; i ++)
+            for (int j = 0; j < col; j ++) {
+                if (i < row1) con_matrix[i][j] = matrix1[i][j];
+                else con_matrix[i][j] = matrix2[i - row1][j];
+            }
+        return con_matrix;
+    } else if (axis == 1) {
+        if (algebra::getRowNum(matrix1) != algebra::getRowNum(matrix2))
+            throw std::logic_error("The matrix1 and matrix2 can't be concatenated alone the axis 1!");
+        
+        int col1 = getColNum(matrix1), col2 = getColNum(matrix2), row = getRowNum(matrix1);
+        Matrix con_matrix = algebra::zeros(row, col1 + col2);
+        for (int i = 0; i < row; i ++)
+            for (int j = 0; j < col1 + col2; j ++) {
+                if (j < col1) con_matrix[i][j] = matrix1[i][j];
+                else con_matrix[i][j] = matrix2[i][j - col1];
+            }
+        return con_matrix;
+    } else throw std::logic_error("The parameter axis must be 0 or 1!");
+}
+
+Matrix algebra::ero_swap (const Matrix& matrix, size_t r1, size_t r2) {
+    int row = algebra::getRowNum(matrix);
+    if (r1 >= row || r2 >= row || r1 < 0 || r2 < 0)
+        std::logic_error("The r1 and r2 must be within the shape of the matrix!");
+    
+    if (r1 == r2) return matrix;
+    Matrix swap_matrix = matrix;
+    std::swap(swap_matrix[r1], swap_matrix[r2]);
+    return swap_matrix;
+}
+
+Matrix algebra::ero_multiply (const Matrix& matrix, size_t r, double c) {
+    if (r >= algebra::getRowNum(matrix) || r < 0)
+        std::logic_error("The r must be within the shape of the matrix!");
+    
+    Matrix mul_matrix = matrix;
+    for (auto& elem : mul_matrix[r])
+        elem *= c;
+    return mul_matrix;
+}
+
+Matrix algebra::ero_sum (const Matrix& matrix, size_t r1, double c, size_t r2) {
+    int row = algebra::getRowNum(matrix);
+    if (r1 >= row || r2 >= row || r1 < 0 || r2 < 0)
+        std::logic_error("The r1 and r2 must be within the shape of the matrix!");
+
+    Matrix sum_matrix = matrix;
+    for (int i = 0; i < algebra::getColNum(matrix); i ++)
+        sum_matrix[r2][i] += matrix[r1][i];
+    return sum_matrix;
 }
