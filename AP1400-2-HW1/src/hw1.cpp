@@ -1,10 +1,10 @@
 #include "hw1.h"
 
-int algebra::getRowNum (const Matrix& matrix) {
+size_t algebra::getRowNum (const Matrix& matrix) {
     return matrix.size();
 }
 
-int algebra::getColNum (const Matrix& matrix) {
+size_t algebra::getColNum (const Matrix& matrix) {
     if (matrix.empty())
         return 0;
     return matrix[0].size();
@@ -87,4 +87,31 @@ Matrix algebra::sum (const Matrix& matrix1, const Matrix& matrix2) {
         for (int j = 0; j < algebra::getColNum(sum_matrix); j ++)
             sum_matrix[i][j] += matrix2[i][j];
     return sum_matrix;
+}
+
+Matrix algebra::transpose (const Matrix& matrix) {
+    int row = algebra::getRowNum(matrix), col = algebra::getColNum(matrix);
+    Matrix trans_matrix = algebra::zeros(col, row);
+    for (int i = 0; i < row; i ++)
+        for (int j = 0; j < col; j ++)
+            trans_matrix[j][i] = matrix[i][j];
+    return trans_matrix;
+}
+
+Matrix algebra::minor (const Matrix& matrix, size_t n, size_t m) {
+    int row = algebra::getRowNum(matrix), col = algebra::getColNum(matrix);
+    if (n >= row || m >= col || n < 0 || m < 0)
+        throw std::logic_error("(n, m) must be within the shape of the matrix!");
+
+    Matrix minor_matrix = algebra::zeros(row - 1, col - 1);
+    for (int i = 0, ni = 0; i < row; i ++) {
+        if (i == n) continue;
+        for (int j = 0, nj = 0; j < col; j ++) {
+            if (j == m) continue;
+            minor_matrix[ni][nj] = matrix[i][j];
+            nj ++;
+        }
+        ni ++;
+    }
+    return minor_matrix;
 }
