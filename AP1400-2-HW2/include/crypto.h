@@ -12,7 +12,7 @@
 #include <openssl/err.h>
 #include <assert.h>
 
-namespace crypto{
+namespace crypto {
 
   RSA* createPrivateRSA(std::string key);
 
