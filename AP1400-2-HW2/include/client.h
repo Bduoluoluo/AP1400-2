@@ -3,13 +3,14 @@
 
 #include <iostream>
 #include <string>
+#include <crypto.h>
 
 class Server;
 class Client {
 public:
     Client (std::string id, const Server& server);
-    std::string get_id ();
-    std::string get_publickey ();
+    std::string get_id () const;
+    std::string get_publickey () const;
     double get_wallet ();
     std::string sign (std::string txt);
     bool transfer_money (std::string receiver, double value);
