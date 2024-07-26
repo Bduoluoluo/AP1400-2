@@ -105,5 +105,6 @@ size_t Server::mine() {
             }
         }
     }
+    pending_trxs.clear();
     return nonce;
 }
