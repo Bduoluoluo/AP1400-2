@@ -1,6 +1,7 @@
 #include "client.h"
+#include "server.h"
 
-Client::Client (std::string id, const Server& server) : id(id), server(&server) {
+Client::Client (const std::string id, Server& server) : id(id), server(&server) {
     crypto::generate_key(this->public_key, this->private_key);
 }
 
@@ -10,4 +11,8 @@ std::string Client::get_id () const {
 
 std::string Client::get_publickey () const {
     return this->public_key;
+}
+
+double Client::get_wallet () {
+    return (this->server)->get_wallet(this->id);
 }

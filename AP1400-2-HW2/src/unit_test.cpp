@@ -17,7 +17,7 @@ TEST(HW1Test, TEST2) {
     auto bryan_from_server{server.get_client("bryan")};
     EXPECT_EQ(bryan.get(), bryan_from_server.get());
 }
-/*
+
 TEST(HW1Test, TEST3) {
     Server server{};
     auto bryan{server.add_client("bryan")};
@@ -63,7 +63,7 @@ TEST(HW1Test, TEST8) {
     auto clint{server.add_client("clint")};
     show_wallets(server);
 }
-
+/*
 TEST(HW1Test, TEST9) {
     Server server{};
     auto bryan{server.add_client("bryan")};

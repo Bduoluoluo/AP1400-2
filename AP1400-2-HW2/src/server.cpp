@@ -4,6 +4,13 @@ Server::Server () {
     this->clients.clear();
 }
 
+void show_wallets(const Server& server) {
+    std::cout << std::string(20, '*') << std::endl;
+    for(const auto& client: server.clients)
+        std::cout << client.first->get_id() <<  " : "  << client.second << std::endl;
+    std::cout << std::string(20, '*') << std::endl;
+}
+
 std::shared_ptr<Client> Server::add_client (std::string id) {
     while (this->get_client(id) != nullptr) {
         std::random_device rd;
@@ -19,10 +26,18 @@ std::shared_ptr<Client> Server::add_client (std::string id) {
     return client_ptr;
 }
 
-std::shared_ptr<Client> Server::get_client (std::string id) const {
-    for (auto client : this->clients) {
+std::shared_ptr<Client> Server::get_client (const std::string id) const {
+    for (const auto& client : this->clients) {
         if ((*client.first).get_id() == id)
             return client.first;
     }
     return nullptr;
+}
+
+double Server::get_wallet (const std::string id) {
+    for (const auto& client : this->clients) {
+        if ((*client.first).get_id() == id)
+            return client.second;
+    }
+    return 0;
 }
