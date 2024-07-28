@@ -193,7 +193,34 @@ CMakeFiles/main.dir/src/bst.cpp.o: ../src/bst.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/functional \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/std_function.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h
 
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
@@ -567,7 +594,12 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/local/include/gtest/gtest-typed-test.h \
   /usr/local/include/gtest/gtest_pred_impl.h \
   /usr/local/include/gtest/gtest_prod.h \
-  ../include/bst.h
+  ../include/bst.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h
 
 CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   /usr/include/stdc-predef.h \
@@ -984,7 +1016,12 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   /usr/local/include/gmock/internal/custom/gmock-generated-actions.h \
   /usr/local/include/gmock/gmock-more-matchers.h \
   /usr/local/include/gmock/gmock-nice-strict.h \
-  ../include/bst.h
+  ../include/bst.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h
 
 
 /usr/local/include/gmock/gmock-more-matchers.h:
@@ -1091,12 +1128,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/usr/include/c++/11/unordered_map:
-
 /usr/local/include/gtest/gtest-matchers.h:
 
 /usr/local/include/gtest/internal/gtest-death-test-internal.h:
@@ -1133,10 +1164,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/bits/ranges_util.h:
@@ -1144,8 +1171,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
-
-/usr/include/linux/stat.h:
 
 /usr/include/c++/11/bits/stl_set.h:
 
@@ -1183,6 +1208,28 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/stdlib.h:
 
+/usr/local/include/gtest/gtest-message.h:
+
+/usr/local/include/gtest/gtest-assertion-result.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/usr/include/c++/11/bits/uses_allocator_args.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
@@ -1200,6 +1247,10 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/11/bit:
+
+/usr/include/c++/11/bits/ranges_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -1225,8 +1276,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/locale.h:
@@ -1237,6 +1286,14 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/include/c++/11/iomanip:
+
+/usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/c++/11/unordered_map:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -1245,13 +1302,9 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/stl_algo.h:
 
-/usr/local/include/gtest/gtest-assertion-result.h:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/11/sstream:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+/usr/include/c++/11/bits/unordered_map.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -1278,8 +1331,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/locale:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/std_thread.h:
 
@@ -1313,10 +1364,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
@@ -1334,10 +1381,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/11/functional:
-
-/usr/include/linux/errno.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -1363,6 +1406,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
+/usr/include/c++/11/bits/deque.tcc:
+
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
@@ -1382,8 +1427,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -1407,9 +1450,17 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/linux/errno.h:
+
+/usr/include/c++/11/functional:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/linux/stat.h:
+
+/usr/include/c++/11/deque:
 
 /usr/include/c++/11/chrono:
 
@@ -1479,6 +1530,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
+/usr/include/c++/11/bits/stl_queue.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -1499,8 +1552,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
-/usr/local/include/gtest/gtest-message.h:
-
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -1508,10 +1559,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/11/typeinfo:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/11/bits/ranges_uninitialized.h:
 
 /usr/include/c++/11/bits/move.h:
 
@@ -1559,14 +1606,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
@@ -1593,9 +1632,9 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/stl_construct.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
-
 /usr/include/c++/11/iterator:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -1616,12 +1655,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/c++/11/string_view:
-
-/usr/include/c++/11/iomanip:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -1713,51 +1746,9 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/istream.tcc:
-
-/usr/local/include/gtest/gtest-typed-test.h:
-
-../src/main.cpp:
-
-/usr/include/linux/posix_types.h:
-
-/usr/local/include/gtest/gtest.h:
-
-/usr/include/c++/11/limits:
-
-/usr/include/c++/11/memory:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/local/include/gmock/gmock-spec-builders.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/11/bits/max_size_type.h:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/local/include/gtest/internal/gtest-internal.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/11/vector:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/include/limits.h:
 
@@ -1781,9 +1772,75 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/climits:
 
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/local/include/gtest/internal/gtest-internal.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/local/include/gmock/gmock-spec-builders.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/local/include/gtest/gtest-typed-test.h:
+
+../src/main.cpp:
+
+/usr/include/linux/posix_types.h:
+
+/usr/local/include/gtest/gtest.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
@@ -1812,13 +1869,3 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/c++/11/bits/uses_allocator_args.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/vector.tcc:
