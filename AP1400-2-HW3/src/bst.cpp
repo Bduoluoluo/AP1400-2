@@ -55,6 +55,42 @@ bool operator== (const int num, const Node& node) {
 
 BST::BST () : root(nullptr) {}
 
+BST::BST (BST& bst) {
+    if (bst.root == nullptr) {
+        this->root = nullptr;
+        return;
+    }
+
+    std::map<Node*, Node*> copyNodes;
+    bst.bfs([&copyNodes] (Node*& node) { copyNodes[node] = new Node(*node); });
+    auto func = [&copyNodes] (Node*& node) {
+        if (node->left == nullptr) copyNodes[node]->left = nullptr;
+        else copyNodes[node]->left = copyNodes[node->left];
+        if (node->right == nullptr) copyNodes[node]->right = nullptr;
+        else copyNodes[node]->right = copyNodes[node->right];
+    };
+    bst.bfs(func);
+    this->root = copyNodes[bst.root];
+}
+
+BST::BST (BST&& bst) {
+    this->root = bst.root;
+    bst.root = nullptr;
+}
+
+BST::BST (std::initializer_list<int> list) {
+    this->root = nullptr;
+    for (auto elem : list)
+        add_node(elem);
+}
+
+BST::~BST () {
+    std::vector<Node*> nodes;
+    bfs([&nodes] (Node*& node) { nodes.push_back(node); });
+    for (auto& node: nodes)
+        delete node;
+}
+
 Node*& BST::get_root () {
     return this->root;
 }
@@ -76,10 +112,7 @@ void BST::bfs (std::function<void(Node*& node)> func) {
 
 size_t BST::length () {
     size_t size = 0;
-    auto func = [&size] (Node*& node) {
-        size ++;
-    };
-    bfs(func);
+    bfs([&size] (Node*& node) { size ++; });
     return size;
 }
 
@@ -187,13 +220,45 @@ bool BST::delete_node (int value) {
 }
 
 std::ostream& operator<< (std::ostream& os, BST& bst) {
-    auto func = [] (Node*& node) {
-        std::cout << *node << std::endl;
-    };
-
     std::cout << std::string(80, '*') << std::endl;
-    bst.bfs(func);
+    bst.bfs([] (Node*& node) { std::cout << *node << std::endl; });
     std::cout << "binary search tree size: " << bst.length() << std::endl;
     std::cout << std::string(80, '*') << std::endl;
     return os;
+}
+
+BST& BST::operator++ () {
+    bfs([] (Node*& node) { node->value ++; });
+    return *this;
+}
+
+BST BST::operator++ (int) {
+    BST oldBst = *this;
+    bfs([] (Node*& node) { node->value ++; });
+    return oldBst;
+}
+
+BST& BST::operator= (BST& bst) {
+    if (bst.root == nullptr) {
+        this->root = nullptr;
+        return *this;
+    }
+
+    std::map<Node*, Node*> copyNodes;
+    bst.bfs([&copyNodes] (Node*& node) { copyNodes[node] = new Node(*node); });
+    auto func = [&copyNodes] (Node*& node) {
+        if (node->left == nullptr) copyNodes[node]->left = nullptr;
+        else copyNodes[node]->left = copyNodes[node->left];
+        if (node->right == nullptr) copyNodes[node]->right = nullptr;
+        else copyNodes[node]->right = copyNodes[node->right];
+    };
+    bst.bfs(func);
+    this->root = copyNodes[bst.root];
+    return *this;
+}
+
+BST& BST::operator= (BST&& bst) {
+    this->root = bst.root;
+    bst.root = nullptr;
+    return *this;
 }

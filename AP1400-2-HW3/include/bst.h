@@ -5,6 +5,9 @@
 #include <ostream>
 #include <functional>
 #include <queue>
+#include <map>
+#include <vector>
+#include <initializer_list>
 
 class BST {
 public:
@@ -33,6 +36,11 @@ public:
     };
 
     BST ();
+    BST (BST& bst);
+    BST (BST&& bst);
+    BST (std::initializer_list<int> list);
+    ~BST ();
+
     Node*& get_root ();
     void bfs (std::function<void(Node*& node)> func);
     size_t length ();
@@ -43,6 +51,10 @@ public:
     bool delete_node (int value);
 
     friend std::ostream& operator<< (std::ostream& os, BST& bst);
+    BST& operator++ ();
+    BST operator++ (int);
+    BST& operator= (BST& bst);
+    BST& operator= (BST&& bst);
 
 private:
     Node* root;
