@@ -338,4 +338,6 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: \
  /usr/local/include/gmock/gmock-more-matchers.h \
  /usr/local/include/gmock/gmock-nice-strict.h \
  /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.h \
+ /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.hpp \
+ /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.h \
  /root/AP1400-2/AP1400-2-HW4/include/shared_ptr.h

@@ -297,4 +297,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
  /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.h \
+ /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.hpp \
+ /root/AP1400-2/AP1400-2-HW4/include/unique_ptr.h \
  /root/AP1400-2/AP1400-2-HW4/include/shared_ptr.h
