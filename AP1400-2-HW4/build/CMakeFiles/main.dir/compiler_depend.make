@@ -376,6 +376,8 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   ../include/unique_ptr.h \
   ../include/unique_ptr.hpp \
   ../include/unique_ptr.h \
+  ../include/shared_ptr.h \
+  ../include/shared_ptr.hpp \
   ../include/shared_ptr.h
 
 CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
@@ -796,6 +798,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   ../include/unique_ptr.h \
   ../include/unique_ptr.hpp \
   ../include/unique_ptr.h \
+  ../include/shared_ptr.h \
+  ../include/shared_ptr.hpp \
   ../include/shared_ptr.h
 
 
@@ -842,6 +846,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/local/include/gmock/gmock-actions.h:
 
 /usr/include/c++/11/algorithm:
+
+../include/shared_ptr.hpp:
 
 /usr/local/include/gtest/gtest_pred_impl.h:
 

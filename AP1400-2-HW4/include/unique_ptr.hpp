@@ -30,13 +30,15 @@ T* UniquePtr<T>::get () const {
 
 template <typename T>
 void UniquePtr<T>::reset () {
-    delete this->_p;
+    if (this->_p != nullptr)
+        delete this->_p;
     this->_p = nullptr;
 }
 
 template <typename T>
 void UniquePtr<T>::reset (T* ptr) {
-    delete this->_p;
+    if (this->_p != nullptr)
+        delete this->_p;
     this->_p = ptr;
 }
 
