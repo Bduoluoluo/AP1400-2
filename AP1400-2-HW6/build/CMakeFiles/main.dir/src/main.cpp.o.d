@@ -296,7 +296,28 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /root/AP1400-2/AP1400-2-HW6/include/q1.h \
+ /root/AP1400-2/AP1400-2-HW6/include/q1.h /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /root/AP1400-2/AP1400-2-HW6/include/q2.h \
  /root/AP1400-2/AP1400-2-HW6/include/q3.h \
  /root/AP1400-2/AP1400-2-HW6/include/q4.h
