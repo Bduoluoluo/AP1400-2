@@ -399,7 +399,37 @@ CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   ../include/q2.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/ranges_algo.h \
+  /usr/include/c++/11/bits/ranges_util.h \
+  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   ../include/q3.h \
+  /usr/include/c++/11/regex \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/c++/11/bits/regex_constants.h \
+  /usr/include/c++/11/bits/regex_error.h \
+  /usr/include/c++/11/bits/regex_automaton.h \
+  /usr/include/c++/11/bits/regex_automaton.tcc \
+  /usr/include/c++/11/bits/regex_scanner.h \
+  /usr/include/c++/11/bits/regex_scanner.tcc \
+  /usr/include/c++/11/bits/regex_compiler.h \
+  /usr/include/c++/11/bits/regex_compiler.tcc \
+  /usr/include/c++/11/bits/regex.h \
+  /usr/include/c++/11/bits/regex.tcc \
+  /usr/include/c++/11/bits/regex_executor.h \
+  /usr/include/c++/11/bits/regex_executor.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/bits/stl_queue.h \
   ../include/q4.h
 
 CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
@@ -819,7 +849,33 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
   /usr/local/include/gmock/gmock-nice-strict.h \
   ../include/q1.h \
   ../include/q2.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   ../include/q3.h \
+  /usr/include/c++/11/regex \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/c++/11/bits/regex_constants.h \
+  /usr/include/c++/11/bits/regex_error.h \
+  /usr/include/c++/11/bits/regex_automaton.h \
+  /usr/include/c++/11/bits/regex_automaton.tcc \
+  /usr/include/c++/11/bits/regex_scanner.h \
+  /usr/include/c++/11/bits/regex_scanner.tcc \
+  /usr/include/c++/11/bits/regex_compiler.h \
+  /usr/include/c++/11/bits/regex_compiler.tcc \
+  /usr/include/c++/11/bits/regex.h \
+  /usr/include/c++/11/bits/regex.tcc \
+  /usr/include/c++/11/bits/regex_executor.h \
+  /usr/include/c++/11/bits/regex_executor.tcc \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/bits/stl_queue.h \
   ../include/q4.h
 
 
@@ -835,9 +891,35 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/local/include/gmock/internal/gmock-port.h:
 
+/usr/local/include/gmock/gmock-actions.h:
+
+/usr/include/c++/11/bits/regex_executor.h:
+
+/usr/include/c++/11/bits/regex_compiler.h:
+
+/usr/include/c++/11/bits/regex_scanner.tcc:
+
+/usr/include/c++/11/bits/regex_automaton.h:
+
+/usr/include/c++/11/bits/regex_error.h:
+
+/usr/include/c++/11/bits/regex_constants.h:
+
+/usr/include/c++/11/bits/stl_stack.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/stack:
+
+/usr/include/c++/11/bitset:
+
 /usr/include/c++/11/algorithm:
 
-/usr/local/include/gmock/gmock-actions.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -975,6 +1057,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
+/usr/include/c++/11/bits/fstream.tcc:
+
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/bits/ranges_util.h:
@@ -982,6 +1066,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/c++/11/deque:
 
 /usr/include/linux/stat.h:
 
@@ -1083,6 +1169,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
+/usr/include/c++/11/bits/stl_deque.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -1092,6 +1180,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/11/bits/localefwd.h:
+
+/usr/include/c++/11/regex:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1207,6 +1297,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/compare:
 
+/usr/include/c++/11/bits/regex_executor.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/ext/type_traits.h:
@@ -1301,6 +1393,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/include/c++/11/cstring:
+
 /usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -1308,6 +1402,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/c++/11/bits/stl_queue.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -1326,6 +1422,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
+
+/usr/include/c++/11/bits/regex_automaton.tcc:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -1372,6 +1470,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/local/include/gmock/gmock-function-mocker.h:
 
 /usr/include/c++/11/streambuf:
+
+/usr/include/c++/11/bits/regex.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
@@ -1559,6 +1659,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/istream:
 
+/usr/include/c++/11/bits/regex_scanner.h:
+
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/linux/posix_types.h:
@@ -1595,6 +1697,8 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
+/usr/include/c++/11/bits/regex_compiler.tcc:
+
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
@@ -1620,6 +1724,10 @@ CMakeFiles/main.dir/src/unit_test.cpp.o: ../src/unit_test.cpp \
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/queue:
+
+/usr/include/c++/11/bits/regex.h:
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
